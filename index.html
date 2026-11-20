@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Electricity Saver</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1>⚡ Electricity Saver</h1>
+    <p>Save Energy. Save Money.</p>
+  </header>
+
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#dashboard">Dashboard</a>
+    <a href="#tips">Energy Tips</a>
+  </nav>
+
+  <section id="home" class="hero">
+    <h2>Welcome to Smart Electricity Saver</h2>
+    <p>Monitor your electricity usage and reduce wastage.</p>
+    <a href="#dashboard" class="btn">Get Started</a>
+  </section>
+
+  <section id="dashboard">
+    <h2>Electricity Dashboard</h2>
+
+    <div class="cards">
+      <div class="card">
+        <h3>Electricity Usage</h3>
+        <p id="units">120 kWh</p>
+      </div>
+
+      <div class="card">
+        <h3>Estimated Bill</h3>
+        <p id="bill">₹600</p>
+      </div>
+
+      <div class="card">
+        <h3>Energy Status</h3>
+        <p id="status">Normal</p>
+      </div>
+    </div>
+
+    <h3>Enter Your Electricity Usage</h3>
+    <input type="number" id="usage"
+      placeholder="Enter units in kWh" min="0">
+
+    <button onclick="calculateBill()">
+      Calculate Bill
+    </button>
+  </section>
+
+  <section id="tips">
+    <h2>Energy Saving Tips</h2>
+    <ul>
+      <li>Switch off lights when not needed.</li>
+      <li>Use LED bulbs.</li>
+      <li>Turn off unused fans.</li>
+      <li>Use energy-efficient appliances.</li>
+    </ul>
+  </section>
+
+  <footer>
+    <p>© 2026 Electricity Saver | Save Energy 🌱</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
